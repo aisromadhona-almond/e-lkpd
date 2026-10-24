@@ -1,6 +1,10 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>E-LKPD Aritmetika Sosial</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<style>:root{color-scheme:light}html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
@@ -24,7 +28,7 @@
   --line:#2D3C5C; --brand:#3CC9B4; --brand-ink:#08201C; --brand-soft:#133B3A;
   --tag:#FF7B66; --tag-soft:#4A2620; --coin:#F6C453; --coin-soft:#43381A;
   --ok:#5BD58A; --ok-soft:#173B28; --bad:#FF8F82; --bad-soft:#4A2320; color-scheme:dark}
-
+ 
 *{box-sizing:border-box}
 body{
   margin:0; font:16px/1.6 var(--f-body); color:var(--ink); background-color:var(--bg);
@@ -41,13 +45,13 @@ h3{font-size:18px;font-weight:600}
 p{margin:0}
 .muted{color:var(--muted)}
 .label{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-
+ 
 header.top{display:flex;flex-direction:column;gap:6px}
 .kelas{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
 .pill{display:inline-flex;align-items:center;gap:6px;background:var(--tag);color:#fff;font-family:var(--f-display);font-weight:600;font-size:14px;padding:3px 12px;border-radius:999px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .pill{color:#2A0F0A}}
 :root[data-theme="dark"] .pill{color:#2A0F0A}
-
+ 
 /* progress + stepper */
 .bar{height:10px;border-radius:999px;background:var(--line);overflow:hidden}
 .bar>i{display:block;height:100%;width:0;background:var(--brand);border-radius:999px;transition:width .4s}
@@ -62,7 +66,7 @@ nav.steps button[aria-current="step"]{border-color:var(--brand);background:var(-
 nav.steps button[aria-current="step"] .n{background:var(--brand);color:var(--brand-ink)}
 nav.steps button.done .n{background:var(--ok);color:#fff}
 @media (max-width:520px){nav.steps button span.t{font-size:11px}}
-
+ 
 /* sheets */
 section.sheet{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:clamp(16px,4vw,28px);display:flex;flex-direction:column;gap:18px}
 section.sheet[hidden]{display:none}
@@ -75,7 +79,7 @@ section.sheet[hidden]{display:none}
 :root[data-theme="dark"] .tagbadge{color:#2A0F0A}
 .formula{background:var(--brand-soft);border-radius:12px;padding:12px 16px;font-family:var(--f-display);font-size:18px;display:flex;flex-direction:column;gap:2px}
 .formula b{color:var(--brand)}
-
+ 
 /* inputs */
 input[type=text],input[type=number],textarea{
   font:600 16px var(--f-body);color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:10px;padding:8px 12px;width:100%;min-width:0}
@@ -87,7 +91,7 @@ textarea{min-height:96px;resize:vertical}
 .btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line)}
 .btn:disabled{opacity:.5;cursor:default}
 .actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-
+ 
 /* choice list */
 .opts{display:grid;gap:10px}
 .opt{display:flex;gap:12px;align-items:flex-start;text-align:left;font:600 16px/1.4 var(--f-body);color:var(--ink);background:var(--bg);border:2px solid var(--line);border-radius:12px;padding:12px 14px;cursor:pointer;width:100%}
@@ -99,7 +103,7 @@ textarea{min-height:96px;resize:vertical}
 .fb.ok{background:var(--ok-soft);color:var(--ok)}
 .fb.no{background:var(--bad-soft);color:var(--bad)}
 .fb.info{background:var(--coin-soft);color:var(--ink)}
-
+ 
 /* explorer */
 .explore{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .price-bar{height:44px;border-radius:10px;background:var(--brand-soft);border:2px solid var(--brand);position:relative;overflow:hidden;display:flex}
@@ -118,7 +122,7 @@ td input{min-width:110px}
 td input.right{border-color:var(--ok);background:var(--ok-soft)}
 td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
 .mark{font-weight:800;min-width:24px;display:inline-block}
-
+ 
 /* drag */
 .tray{display:flex;flex-wrap:wrap;gap:10px;padding:14px;border-radius:14px;background:var(--coin-soft)}
 .chip{font:700 17px var(--f-display);min-width:64px;height:64px;padding:0 10px;border-radius:32px;border:3px solid var(--coin);background:var(--card);color:var(--ink);cursor:grab;font-variant-numeric:tabular-nums;touch-action:manipulation}
@@ -130,7 +134,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
 .slot.filled{border-style:solid;border-color:var(--ink)}
 .slot.right{border-style:solid;border-color:var(--ok);background:var(--ok-soft);color:var(--ok)}
 .slot.wrong{border-style:solid;border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
-
+ 
 .qcard{display:flex;flex-direction:column;gap:12px;padding-top:18px;border-top:2px solid var(--line)}
 .ans{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .ans input{max-width:220px}
@@ -142,19 +146,21 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
 .nextrow{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding-top:6px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
-
+</head>
+<body>
+ 
 <div class="wrap">
   <header class="top">
     <div class="kelas"><span class="pill">E-LKPD</span><span class="label">Matematika · Kelas VII · Aritmetika Sosial</span></div>
     <h1>Diskon: Berapa Sebenarnya yang Kamu Bayar?</h1>
   </header>
-
+ 
   <div>
     <div class="meta"><span id="metaStep">Langkah 1 dari 5</span><span id="metaScore">Skor 0 / 7</span></div>
     <div class="bar" role="progressbar" aria-label="Kemajuan" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0"><i id="barFill"></i></div>
   </div>
   <nav class="steps" id="steps" aria-label="Langkah kegiatan"></nav>
-
+ 
   <!-- 0 PETUNJUK -->
   <section class="sheet" id="s0">
     <div class="head"><span class="label">Mulai</span><h2>Kenalan dulu</h2></div>
@@ -168,7 +174,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     <p>Ada empat kegiatan: <b>Pemantik</b>, <b>Eksplorasi</b>, <b>Latihan</b>, <b>Refleksi</b>. Setiap jawaban langsung dicek. Boleh mencoba lagi sampai benar. Sediakan kalkulator atau kertas coretan.</p>
     <div class="actions"><button class="btn" data-go="1">Mulai kegiatan</button></div>
   </section>
-
+ 
   <!-- 1 PEMANTIK -->
   <section class="sheet" id="s1" hidden>
     <div class="head"><span class="label">Kegiatan 1 · Pemantik</span><h2>Rina melihat tas di etalase toko</h2></div>
@@ -186,7 +192,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     </div>
     <div class="nextrow"><button class="btn alt" data-go="0">Kembali</button><button class="btn" data-go="2">Lanjut ke Eksplorasi</button></div>
   </section>
-
+ 
   <!-- 2 EKSPLORASI -->
   <section class="sheet" id="s2" hidden>
     <div class="head"><span class="label">Kegiatan 2 · Eksplorasi</span><h2>Ubah angkanya, lihat apa yang terjadi</h2></div>
@@ -211,7 +217,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     </div>
     <div class="nextrow"><button class="btn alt" data-go="1">Kembali</button><button class="btn" data-go="3">Lanjut ke Latihan</button></div>
   </section>
-
+ 
   <!-- 3 LATIHAN -->
   <section class="sheet" id="s3" hidden>
     <div class="head"><span class="label">Kegiatan 3 · Latihan</span><h2>Susun koin jawaban</h2></div>
@@ -223,7 +229,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     </div>
     <div class="actions"><button class="btn" id="chkDrag">Cek jawaban</button><button class="btn alt" id="rstDrag">Kosongkan</button></div>
     <div class="fb" id="dragFb" hidden></div>
-
+ 
     <div class="qcard">
       <h3>Soal 4. Sepatu seharga Rp350.000 didiskon 20%. Berapa yang harus dibayar?</h3>
       <div class="ans"><span>Rp</span><input type="text" inputmode="numeric" id="a4" placeholder="Jawabanmu"><button class="btn" id="c4">Cek</button></div>
@@ -236,7 +242,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     </div>
     <div class="nextrow"><button class="btn alt" data-go="2">Kembali</button><button class="btn" data-go="4">Lanjut ke Refleksi</button></div>
   </section>
-
+ 
   <!-- 4 REFLEKSI -->
   <section class="sheet" id="s4" hidden>
     <div class="head"><span class="label">Kegiatan 4 · Refleksi</span><h2>Bagian mana yang paling sulit?</h2></div>
@@ -254,14 +260,14 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     <div class="nextrow"><button class="btn alt" data-go="3">Kembali</button></div>
   </section>
 </div>
-
+ 
 <script>
 (function(){
   var TOTAL=7, cur=0, done={}, level='';
   var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
   var rp=function(n){return 'Rp'+Math.round(n).toLocaleString('id-ID')};
   var num=function(s){var t=String(s).replace(/[^0-9]/g,'');return t===''?NaN:parseInt(t,10)};
-
+ 
   /* stepper */
   var names=['Mulai','Pemantik','Eksplorasi','Latihan','Refleksi'];
   var nav=$('#steps');
@@ -275,7 +281,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     window.scrollTo({top:0,behavior:'smooth'});
   }
   $$('[data-go]').forEach(function(b){b.addEventListener('click',function(){go(+b.getAttribute('data-go'))})});
-
+ 
   function score(){return Object.keys(done).filter(function(k){return done[k]}).length}
   function mark(id,ok){
     if(ok&&!done[id]){done[id]=true}
@@ -289,7 +295,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     steps[3].classList.toggle('done',!!(done.d&&done.q4&&done.q5));
   }
   function fb(el,kind,txt){el.hidden=false;el.className='fb '+kind;el.textContent=txt}
-
+ 
   /* multiple choice builder */
   function mc(box,fbEl,id,opts,right,okTxt,hints){
     var L='ABCD';
@@ -311,7 +317,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
   mc($('#q5'),$('#fb5'),'q5',['Rp99.000','Rp100.000','Rp81.000','Rp110.000'],1,
     'Tepat. Bayar 90% dari harga awal, jadi harga awal = 90.000 ÷ 0,9 = Rp100.000.',
     {0:'Rp99.000 adalah 90.000 + 10%. Ingat, 10% dihitung dari harga awal, bukan dari Rp90.000.',2:'Rp81.000 mengurangi 10% dari Rp90.000. Padahal Rp90.000 sudah harga setelah diskon.',3:'Rp110.000 dikurangi 10% menjadi Rp99.000, bukan Rp90.000.'});
-
+ 
   /* explorer */
   var hA=$('#hAwal'),pc=$('#pct');
   function ex(){
@@ -321,7 +327,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     $('#payTxt').textContent=p>=90?'':rp(h-pot);
   }
   hA.addEventListener('input',ex);pc.addEventListener('input',ex);ex();
-
+ 
   var rows=[[100000,10],[250000,20],[80000,50]];
   var tb=$('#tb');
   rows.forEach(function(r,i){
@@ -343,7 +349,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     });
     tb.appendChild(tr);
   });
-
+ 
   /* drag & drop */
   var tray=$('#tray'),sel=null;
   ['20','25','75','25.000','50.000','150.000','175.000','200.000','250.000'].forEach(function(v){
@@ -379,7 +385,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     slots.forEach(function(s){s.textContent='';delete s.dataset.v;s.className='slot'});
     $$('.chip').forEach(function(x){x.setAttribute('aria-pressed','false')});sel=null;$('#dragFb').hidden=true;
   });
-
+ 
   $('#c4').addEventListener('click',function(){
     var v=num($('#a4').value),f=$('#fb4');
     if(v===280000){fb(f,'ok','Tepat. Potongan 20/100 × 350.000 = 70.000, jadi 350.000 − 70.000 = Rp280.000.');mark('q4',true)}
@@ -387,7 +393,7 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     else if(isNaN(v))fb(f,'info','Ketik jawabannya dulu dalam angka.');
     else fb(f,'no','Belum tepat. Hitung potongannya dulu: 20/100 × 350.000.');
   });
-
+ 
   /* refleksi */
   $$('#lvs .lv').forEach(function(b){b.addEventListener('click',function(){
     level=b.dataset.v;$$('#lvs .lv').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});summary()})});
@@ -402,9 +408,9 @@ td input.wrong{border-color:var(--bad);background:var(--bad-soft)}
     function fallback(){t.focus();t.select();m.textContent='Teks terpilih. Tekan salin di perangkatmu.'}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(function(){m.textContent='Tersalin.'},fallback)}else fallback();
   });
-
+ 
   go(0);mark('_',false);
 })();
 </script>
-
-</body></html>
+</body>
+</html>
